@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "allowJs": true,
+        "importHelpers": false,
+        "sourceMap": false,
+        "inlineSourceMap": false,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "ES6",
+        "types": ["node"],
+        "lib": ["es5", "es6", "dom"],
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "exclude": ["node_modules", "build", "webpack"],
+    "types": ["typePatches"]
+}

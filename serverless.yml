@@ -1,0 +1,48 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    https://docs.serverless.com
+#    https://serverless.com/framework/docs/providers/aws/guide/serverless.yml
+#
+# Happy Coding!
+
+service: your-service-name
+
+provider:
+    name: aws
+    runtime: nodejs10.x
+    stage: dev
+    region: us-east-2
+
+functions:
+    yourFunctionName:
+        handler: handler.yourFunctionName
+        method: get
+        events:
+            - http:
+                path: /{params}
+                method: any
+                cors: true
+
+plugins:
+    - serverless-plugin-typescript
+    - serverless-offline
+    - serverless-plugin-include-dependencies
+
+package:
+    include:
+        - handler.ts
+# If a file that needs to be uploaded to AWS exists,
+# it should be specified in the include as shown below.
+#       - static_json/**/*
+
+custom:
+    includeDependencies:
+        always:
+            - 'src/lib/**'
