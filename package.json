@@ -1,7 +1,7 @@
 {
     "name": "serverless-ts-template",
     "version": "1.0.0",
-    "description": "Serverless Typescript Template",
+    "description": "🚀 Serverless Typescript Template",
     "main": "handler.js",
     "scripts": {
         "test": "serverless offline start",
@@ -18,6 +18,8 @@
         "serverless-plugin-typescript": "^1.1.9",
         "typescript": "^3.8.3"
     },
-    "dependencies": {},
+    "dependencies": {
+        "querystring": "^0.2.0"
+    },
     "license": "MIT"
 }
