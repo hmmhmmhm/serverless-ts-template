@@ -12,8 +12,8 @@
     },
     "author": "",
     "devDependencies": {
-        "@types/aws-lambda": "^8.10.50",
-        "serverless-offline": "^6.1.4",
+        "@types/aws-lambda": "^8.10.51",
+        "serverless-offline": "^6.1.5",
         "serverless-plugin-include-dependencies": "^4.1.0",
         "serverless-plugin-typescript": "^1.1.9",
         "typescript": "^3.8.3"
