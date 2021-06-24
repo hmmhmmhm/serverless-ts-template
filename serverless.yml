@@ -15,34 +15,34 @@
 service: your-service-name
 
 provider:
-    name: aws
-    runtime: nodejs10.x
-    stage: dev
-    region: us-east-2
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-east-2
 
 functions:
-    yourFunctionName:
-        handler: handler.yourFunctionName
-        method: get
-        events:
-            - http:
-                path: /{params}
-                method: any
-                cors: true
+  yourFunctionName:
+    handler: handler.yourFunctionName
+    method: get
+    events:
+      - http:
+          path: /{params}
+          method: any
+          cors: true
 
 plugins:
-    - serverless-plugin-typescript
-    - serverless-offline
-    - serverless-plugin-include-dependencies
+  - serverless-plugin-typescript
+  - serverless-offline
+  - serverless-plugin-include-dependencies
 
 package:
-    include:
-        - handler.ts
+  include:
+    - handler.ts
 # If a file that needs to be uploaded to AWS exists,
 # it should be specified in the include as shown below.
 #       - static_json/**/*
 
 custom:
-    includeDependencies:
-        always:
-            - 'src/lib/**'
+  includeDependencies:
+    always:
+      - 'src/lib/**'

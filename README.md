@@ -4,13 +4,14 @@
 
 An easy-to-use Serverless template!
 
--   Allowed to use typescript in serverless.js!
+- Allowed to use typescript in serverless.js!
 
 ![Serverless Is Awesome GIF](https://media.vlpt.us/images/jeffyoun/post/52df101a-88e2-4152-8f74-579d0abaaae6/serverless-components.gif)
 
 ## 📥 Installation
 
 ### Template Download & Install
+
 ```bash
 git clone https://github.com/hmmhmmhm/serverless-ts-template
 cd serverless-ts-template
@@ -18,11 +19,10 @@ npm install
 ```
 
 ### Install Serverless
+
 ```
 npm install -g serverless
 ```
-
-
 
 ## 📜 Configulation
 
@@ -47,17 +47,15 @@ npm install -g serverless
   - Open up **`handler.ts`** and **`serverless.yml`** files.
   - Fix `yourFunctionName` to actual Lambda Function names
 
-
-
 ## 📔 Command
 
--   `npm test` (or `npm start`)
+- `npm test` (or `npm start`)
 
-    > Run the development local serveless server. This command creates a path accessible through HTTP.
+  > Run the development local serveless server. This command creates a path accessible through HTTP.
 
--   `npm run deploy`
+- `npm run deploy`
 
-    > Deploy the file to the physical server. (like a AWS)
+  > Deploy the file to the physical server. (like a AWS)
 
 ## License
 
