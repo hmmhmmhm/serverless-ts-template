@@ -1,25 +1,25 @@
 {
-    "name": "serverless-ts-template",
-    "version": "1.0.0",
-    "description": "🚀 Serverless Typescript Template",
-    "main": "handler.js",
-    "scripts": {
-        "test": "serverless offline start",
-        "start": "serverless offline start",
-        "login": "serverless login",
-        "deploy": "serverless deploy",
-        "deploy:force": "serverless deploy --force"
-    },
-    "author": "",
-    "devDependencies": {
-        "@types/aws-lambda": "^8.10.51",
-        "serverless-offline": "^6.1.5",
-        "serverless-plugin-include-dependencies": "^4.1.0",
-        "serverless-plugin-typescript": "^1.1.9",
-        "typescript": "^3.8.3"
-    },
-    "dependencies": {
-        "querystring": "^0.2.0"
-    },
-    "license": "MIT"
+  "name": "serverless-ts-template",
+  "version": "1.0.0",
+  "description": "🚀 Serverless Typescript Template",
+  "main": "handler.js",
+  "scripts": {
+    "test": "serverless offline start",
+    "start": "serverless offline start",
+    "login": "serverless login",
+    "deploy": "serverless deploy",
+    "deploy:force": "serverless deploy --force"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.51",
+    "serverless-offline": "^6.1.5",
+    "serverless-plugin-include-dependencies": "^4.1.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "querystring": "^0.2.0"
+  },
+  "license": "MIT"
 }
